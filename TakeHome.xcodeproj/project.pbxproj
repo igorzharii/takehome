@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78EE36C626272FCE00E77986 /* PodcastPageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE36C526272FCE00E77986 /* PodcastPageManager.swift */; };
+		7A3046D572C60C3EA15A3A9F /* Pods_TakeHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9CA48B754AF8475F8C74E /* Pods_TakeHome.framework */; };
+		86EDFA031CF8E26E7CD30722 /* Pods_TakeHome_TakeHomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B051652D438028D6F04CC79 /* Pods_TakeHome_TakeHomeUITests.framework */; };
+		920DC966C5765FEFC1ECD8BC /* Pods_TakeHomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE103CD68730429317487FA3 /* Pods_TakeHomeTests.framework */; };
+		B812772C2625A0B900E95DCE /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812772A2625A0B900E95DCE /* PodcastCell.swift */; };
+		B812772D2625A0B900E95DCE /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B812772B2625A0B900E95DCE /* PodcastCell.xib */; };
+		B812773C2625A62300E95DCE /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812773B2625A62300E95DCE /* Debouncer.swift */; };
+		ECF617A0260023880061902C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6179F260023880061902C /* AppDelegate.swift */; };
+		ECF617A4260023880061902C /* PodcastsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF617A3260023880061902C /* PodcastsController.swift */; };
+		ECF617A7260023880061902C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF617A5260023880061902C /* Main.storyboard */; };
+		ECF617A92600238A0061902C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF617A82600238A0061902C /* Assets.xcassets */; };
+		ECF617AC2600238A0061902C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF617AA2600238A0061902C /* LaunchScreen.storyboard */; };
+		ECF617B72600238A0061902C /* TakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF617B62600238A0061902C /* TakeHomeTests.swift */; };
+		ECF617C22600238A0061902C /* TakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF617C12600238A0061902C /* TakeHomeUITests.swift */; };
+		ECF617DA260028D10061902C /* SearchResultDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF617D9260028D10061902C /* SearchResultDataProvider.swift */; };
+		ECF617DF260029440061902C /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF617DE260029440061902C /* Podcast.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECF617B32600238A0061902C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF61794260023880061902C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF6179B260023880061902C;
+			remoteInfo = TakeHome;
+		};
+		ECF617BE2600238A0061902C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF61794260023880061902C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF6179B260023880061902C;
+			remoteInfo = TakeHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38A2118943D69F635F4279C6 /* Pods-TakeHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHome.debug.xcconfig"; path = "Target Support Files/Pods-TakeHome/Pods-TakeHome.debug.xcconfig"; sourceTree = "<group>"; };
+		6B051652D438028D6F04CC79 /* Pods_TakeHome_TakeHomeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeHome_TakeHomeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		764A6D4E95A53DE8AD60B6D1 /* Pods-TakeHome-TakeHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHome-TakeHomeUITests.debug.xcconfig"; path = "Target Support Files/Pods-TakeHome-TakeHomeUITests/Pods-TakeHome-TakeHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		78EE36C526272FCE00E77986 /* PodcastPageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPageManager.swift; sourceTree = "<group>"; };
+		A0B404A32F72A6EBA22B84F5 /* Pods-TakeHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeTests.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeTests/Pods-TakeHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B812772A2625A0B900E95DCE /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
+		B812772B2625A0B900E95DCE /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
+		B812773B2625A62300E95DCE /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		C402F28AB77F20B4C90ACAED /* Pods-TakeHome-TakeHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHome-TakeHomeUITests.release.xcconfig"; path = "Target Support Files/Pods-TakeHome-TakeHomeUITests/Pods-TakeHome-TakeHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C959E54FDAD656D31AB8B66A /* Pods-TakeHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeTests.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeTests/Pods-TakeHomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE103CD68730429317487FA3 /* Pods_TakeHomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeHomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC400B34CEC4761C9E2E4D7F /* Pods-TakeHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHome.release.xcconfig"; path = "Target Support Files/Pods-TakeHome/Pods-TakeHome.release.xcconfig"; sourceTree = "<group>"; };
+		DCE9CA48B754AF8475F8C74E /* Pods_TakeHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF6179C260023880061902C /* TakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF6179F260023880061902C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECF617A3260023880061902C /* PodcastsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsController.swift; sourceTree = "<group>"; };
+		ECF617A6260023880061902C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECF617A82600238A0061902C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECF617AB2600238A0061902C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECF617AD2600238A0061902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF617B22600238A0061902C /* TakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF617B62600238A0061902C /* TakeHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTests.swift; sourceTree = "<group>"; };
+		ECF617B82600238A0061902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF617BD2600238A0061902C /* TakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF617C12600238A0061902C /* TakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeUITests.swift; sourceTree = "<group>"; };
+		ECF617C32600238A0061902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF617D9260028D10061902C /* SearchResultDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDataProvider.swift; sourceTree = "<group>"; };
+		ECF617DE260029440061902C /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECF61799260023880061902C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3046D572C60C3EA15A3A9F /* Pods_TakeHome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF617AF2600238A0061902C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920DC966C5765FEFC1ECD8BC /* Pods_TakeHomeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF617BA2600238A0061902C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EDFA031CF8E26E7CD30722 /* Pods_TakeHome_TakeHomeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78EE36C426272FB800E77986 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				78EE36C526272FCE00E77986 /* PodcastPageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9F604C3A77F7AD64169154B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9CA48B754AF8475F8C74E /* Pods_TakeHome.framework */,
+				6B051652D438028D6F04CC79 /* Pods_TakeHome_TakeHomeUITests.framework */,
+				CE103CD68730429317487FA3 /* Pods_TakeHomeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3E7B557792A1509B0C7D84C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38A2118943D69F635F4279C6 /* Pods-TakeHome.debug.xcconfig */,
+				DC400B34CEC4761C9E2E4D7F /* Pods-TakeHome.release.xcconfig */,
+				764A6D4E95A53DE8AD60B6D1 /* Pods-TakeHome-TakeHomeUITests.debug.xcconfig */,
+				C402F28AB77F20B4C90ACAED /* Pods-TakeHome-TakeHomeUITests.release.xcconfig */,
+				A0B404A32F72A6EBA22B84F5 /* Pods-TakeHomeTests.debug.xcconfig */,
+				C959E54FDAD656D31AB8B66A /* Pods-TakeHomeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B81277202625A03300E95DCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECF617D9260028D10061902C /* SearchResultDataProvider.swift */,
+				ECF617DE260029440061902C /* Podcast.swift */,
+				B812773B2625A62300E95DCE /* Debouncer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B81277242625A03C00E95DCE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECF617A3260023880061902C /* PodcastsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B81277282625A04500E95DCE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ECF617A5260023880061902C /* Main.storyboard */,
+				ECF617AA2600238A0061902C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B81277292625A05100E95DCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B81277342625A0C500E95DCE /* PodcastCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B81277342625A0C500E95DCE /* PodcastCell */ = {
+			isa = PBXGroup;
+			children = (
+				B812772A2625A0B900E95DCE /* PodcastCell.swift */,
+				B812772B2625A0B900E95DCE /* PodcastCell.xib */,
+			);
+			path = PodcastCell;
+			sourceTree = "<group>";
+		};
+		ECF61793260023880061902C = {
+			isa = PBXGroup;
+			children = (
+				ECF6179E260023880061902C /* TakeHome */,
+				ECF617B52600238A0061902C /* TakeHomeTests */,
+				ECF617C02600238A0061902C /* TakeHomeUITests */,
+				ECF6179D260023880061902C /* Products */,
+				A3E7B557792A1509B0C7D84C /* Pods */,
+				9F604C3A77F7AD64169154B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF6179D260023880061902C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECF6179C260023880061902C /* TakeHome.app */,
+				ECF617B22600238A0061902C /* TakeHomeTests.xctest */,
+				ECF617BD2600238A0061902C /* TakeHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF6179E260023880061902C /* TakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				78EE36C426272FB800E77986 /* Managers */,
+				ECF6179F260023880061902C /* AppDelegate.swift */,
+				B81277202625A03300E95DCE /* Models */,
+				B81277292625A05100E95DCE /* Views */,
+				B81277242625A03C00E95DCE /* Controllers */,
+				B81277282625A04500E95DCE /* Storyboards */,
+				ECF617A82600238A0061902C /* Assets.xcassets */,
+				ECF617AD2600238A0061902C /* Info.plist */,
+			);
+			path = TakeHome;
+			sourceTree = "<group>";
+		};
+		ECF617B52600238A0061902C /* TakeHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF617B62600238A0061902C /* TakeHomeTests.swift */,
+				ECF617B82600238A0061902C /* Info.plist */,
+			);
+			path = TakeHomeTests;
+			sourceTree = "<group>";
+		};
+		ECF617C02600238A0061902C /* TakeHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF617C12600238A0061902C /* TakeHomeUITests.swift */,
+				ECF617C32600238A0061902C /* Info.plist */,
+			);
+			path = TakeHomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECF6179B260023880061902C /* TakeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF617C62600238A0061902C /* Build configuration list for PBXNativeTarget "TakeHome" */;
+			buildPhases = (
+				08DF9E4A5573C2EB41B7AA12 /* [CP] Check Pods Manifest.lock */,
+				ECF61798260023880061902C /* Sources */,
+				ECF61799260023880061902C /* Frameworks */,
+				ECF6179A260023880061902C /* Resources */,
+				A456E3698F846677734B6F8F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeHome;
+			productName = TakeHome;
+			productReference = ECF6179C260023880061902C /* TakeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECF617B12600238A0061902C /* TakeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF617C92600238A0061902C /* Build configuration list for PBXNativeTarget "TakeHomeTests" */;
+			buildPhases = (
+				5244F977FBB9B13F0B1B2D26 /* [CP] Check Pods Manifest.lock */,
+				ECF617AE2600238A0061902C /* Sources */,
+				ECF617AF2600238A0061902C /* Frameworks */,
+				ECF617B02600238A0061902C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF617B42600238A0061902C /* PBXTargetDependency */,
+			);
+			name = TakeHomeTests;
+			productName = TakeHomeTests;
+			productReference = ECF617B22600238A0061902C /* TakeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECF617BC2600238A0061902C /* TakeHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF617CC2600238A0061902C /* Build configuration list for PBXNativeTarget "TakeHomeUITests" */;
+			buildPhases = (
+				C2CF351A62A46BEE68F51647 /* [CP] Check Pods Manifest.lock */,
+				ECF617B92600238A0061902C /* Sources */,
+				ECF617BA2600238A0061902C /* Frameworks */,
+				ECF617BB2600238A0061902C /* Resources */,
+				A896D7993D2F6CADF36A2D93 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF617BF2600238A0061902C /* PBXTargetDependency */,
+			);
+			name = TakeHomeUITests;
+			productName = TakeHomeUITests;
+			productReference = ECF617BD2600238A0061902C /* TakeHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECF61794260023880061902C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					ECF6179B260023880061902C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					ECF617B12600238A0061902C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = ECF6179B260023880061902C;
+					};
+					ECF617BC2600238A0061902C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = ECF6179B260023880061902C;
+					};
+				};
+			};
+			buildConfigurationList = ECF61797260023880061902C /* Build configuration list for PBXProject "TakeHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECF61793260023880061902C;
+			productRefGroup = ECF6179D260023880061902C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECF6179B260023880061902C /* TakeHome */,
+				ECF617B12600238A0061902C /* TakeHomeTests */,
+				ECF617BC2600238A0061902C /* TakeHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF6179A260023880061902C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF617AC2600238A0061902C /* LaunchScreen.storyboard in Resources */,
+				ECF617A92600238A0061902C /* Assets.xcassets in Resources */,
+				B812772D2625A0B900E95DCE /* PodcastCell.xib in Resources */,
+				ECF617A7260023880061902C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF617B02600238A0061902C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF617BB2600238A0061902C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08DF9E4A5573C2EB41B7AA12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5244F977FBB9B13F0B1B2D26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeHomeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A456E3698F846677734B6F8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeHome/Pods-TakeHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeHome/Pods-TakeHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeHome/Pods-TakeHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A896D7993D2F6CADF36A2D93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeHome-TakeHomeUITests/Pods-TakeHome-TakeHomeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeHome-TakeHomeUITests/Pods-TakeHome-TakeHomeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeHome-TakeHomeUITests/Pods-TakeHome-TakeHomeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2CF351A62A46BEE68F51647 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeHome-TakeHomeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECF61798260023880061902C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF617A4260023880061902C /* PodcastsController.swift in Sources */,
+				ECF617A0260023880061902C /* AppDelegate.swift in Sources */,
+				B812772C2625A0B900E95DCE /* PodcastCell.swift in Sources */,
+				ECF617DA260028D10061902C /* SearchResultDataProvider.swift in Sources */,
+				ECF617DF260029440061902C /* Podcast.swift in Sources */,
+				78EE36C626272FCE00E77986 /* PodcastPageManager.swift in Sources */,
+				B812773C2625A62300E95DCE /* Debouncer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF617AE2600238A0061902C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF617B72600238A0061902C /* TakeHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF617B92600238A0061902C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF617C22600238A0061902C /* TakeHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECF617B42600238A0061902C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF6179B260023880061902C /* TakeHome */;
+			targetProxy = ECF617B32600238A0061902C /* PBXContainerItemProxy */;
+		};
+		ECF617BF2600238A0061902C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF6179B260023880061902C /* TakeHome */;
+			targetProxy = ECF617BE2600238A0061902C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECF617A5260023880061902C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF617A6260023880061902C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECF617AA2600238A0061902C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF617AB2600238A0061902C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECF617C42600238A0061902C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECF617C52600238A0061902C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECF617C72600238A0061902C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A2118943D69F635F4279C6 /* Pods-TakeHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55LZ2Z947Q;
+				INFOPLIST_FILE = TakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mediia.luminary.TakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECF617C82600238A0061902C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC400B34CEC4761C9E2E4D7F /* Pods-TakeHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55LZ2Z947Q;
+				INFOPLIST_FILE = TakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mediia.luminary.TakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECF617CA2600238A0061902C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B404A32F72A6EBA22B84F5 /* Pods-TakeHomeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55LZ2Z947Q;
+				INFOPLIST_FILE = TakeHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mediia.luminary.TakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHome.app/TakeHome";
+			};
+			name = Debug;
+		};
+		ECF617CB2600238A0061902C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C959E54FDAD656D31AB8B66A /* Pods-TakeHomeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55LZ2Z947Q;
+				INFOPLIST_FILE = TakeHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mediia.luminary.TakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHome.app/TakeHome";
+			};
+			name = Release;
+		};
+		ECF617CD2600238A0061902C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 764A6D4E95A53DE8AD60B6D1 /* Pods-TakeHome-TakeHomeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55LZ2Z947Q;
+				INFOPLIST_FILE = TakeHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mediia.luminary.TakeHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeHome;
+			};
+			name = Debug;
+		};
+		ECF617CE2600238A0061902C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C402F28AB77F20B4C90ACAED /* Pods-TakeHome-TakeHomeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55LZ2Z947Q;
+				INFOPLIST_FILE = TakeHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mediia.luminary.TakeHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECF61797260023880061902C /* Build configuration list for PBXProject "TakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF617C42600238A0061902C /* Debug */,
+				ECF617C52600238A0061902C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF617C62600238A0061902C /* Build configuration list for PBXNativeTarget "TakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF617C72600238A0061902C /* Debug */,
+				ECF617C82600238A0061902C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF617C92600238A0061902C /* Build configuration list for PBXNativeTarget "TakeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF617CA2600238A0061902C /* Debug */,
+				ECF617CB2600238A0061902C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF617CC2600238A0061902C /* Build configuration list for PBXNativeTarget "TakeHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF617CD2600238A0061902C /* Debug */,
+				ECF617CE2600238A0061902C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECF61794260023880061902C /* Project object */;
+}

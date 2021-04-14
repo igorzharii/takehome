@@ -1,6 +1,6 @@
 # TakeHome
 
-### Frameworks used:
+### Frameworks used
 Alamofire - for fetching podcasts from the given API
 Kingfisher - for setting UIImages by URL for podcasts easily
 
